@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    max-width: 80%; 
+}
+
+.logo-container {
+    text-align: center;
+    padding: 0 0;
+}
+
+.container {
+    background-color:#2e2b2b; /* Tom de vermelho claro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #cc0000; /* Vermelho escuro */
+}
+h2 {
+    text-align: center;
+    color: #cc0000; /* Vermelho escuro */
+}
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cc0000; /* Vermelho escuro */
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #cc0000; /* Vermelho escuro */
+    color: #fff;
+    border: 1px solid #cc0000; /* Vermelho escuro */
+}
+
+.content-container {
+    display: block;
+}
+
+.content {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #cc0000; /* Vermelho escuro */
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #cc0000; /* Vermelho escuro */
+}
+
+button {
+    padding: 10px;
+    background-color: #cc0000; /* Vermelho escuro */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #990000; /* Tom de vermelho mais escuro */
+}
+
+.excel-style {
+    border: 1px solid #cc0000; /* Vermelho escuro */
+    list-style: none;
+    padding: 0;
+}
+
+.excel-style li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #cc0000; /* Vermelho escuro */
+}
+
+.excel-style li:first-child {
+    font-weight: bold;
+    background-color: #cc0000; /* Vermelho escuro */
+    color: #fff;
+}
+
+.excel-style span {
+    flex-basis: 25%;
+    text-align: center;
+}
