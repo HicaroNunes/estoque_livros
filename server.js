@@ -1,12 +1,12 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const app = express();
 
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-const connection = mysql.createConnection({
+const db = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
@@ -14,10 +14,13 @@ const connection = mysql.createConnection({
     port: process.env.DB_PORT || 3306 
   });
 
-db.connect(err => {
-    if (err) throw err;
-    console.log('Conectado ao banco de dados MySQL!');
-});
+  db.connect((err) => {
+    if (err) {
+      console.error('Error connecting to MySQL:', err);
+      return;
+    }
+    console.log('Connected to MySQL!');
+  });
 
 app.post('/livros/adicionar', (req, res) => {
     const { titulo, autor, quantidade } = req.body;
